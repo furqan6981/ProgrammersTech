@@ -7,7 +7,3 @@ function showMenu() {
 function hideMenu() {
     navLinks.style.display = '';
 }
-
-function down() {
-    location.href="c:\Users\x250\Downloads\Furqans-Resume--.pdf";
-}
