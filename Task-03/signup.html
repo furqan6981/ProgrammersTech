@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SignUp</title>
+
+    <style>
+        .container_su {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .form-container_su {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            /* border: 1px solid black; */
+
+        }
+
+        .form-container_su h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        p {
+            margin-top: 15px;
+            color: #555;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .social-signup {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #555;
+            transition: background 0.3s, border-color 0.3s;
+        }
+
+        .social-button i {
+            margin-right: 8px;
+        }
+
+        .social-button:hover {
+            border-color: #007bff;
+            background: #f0f0f0;
+        }
+
+        .social-button.google {
+            background: #db4437;
+            color: #fff;
+            border-color: #db4437;
+        }
+
+        .social-button.google:hover {
+            background: #c33d2e;
+        }
+
+        .social-button.github {
+            background: #333;
+            color: #fff;
+            border-color: #333;
+        }
+
+        .social-button.github:hover {
+            background: #24292e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about us.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Sign Up</h1>
+    </section>
+
+    <!-- signup -->
+    <div class="container_su">
+        <div class="form-containe_su">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Or sign up with:</p>
+            <div class="social-signup">
+                <a href="#" class="social-button google"><i class="fab fa-google"></i> Google</a>
+                <a href="#" class="social-button github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <p>Already have an account? <a href="login.html">Log in here</a></p>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Maxime modi quisquam tenetur error dicta nulla odit accusamus <br>
+            maiores quis quaerat voluptatibus,ratione necessitatibus a
+            itaque culpa ut sunt illum architecto.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-snapchat"></i>
+        </div>
+        <!-- <p>Made by <strong>furqantechsolutions.com</strong></p> -->
+    </section>
+
+</body>
+
+</html>
+
+<script>
+    let navLinks = document.getElementById('navLinks');
+
+    function showMenu() {
+        navLinks.style.display = 'block';
+
+    }
+    function hideMenu() {
+        navLinks.style.display = '';
+
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const signupForm = document.getElementById('signupForm');
+
+        signupForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const email = signupForm.email.value.trim();
+            const password = signupForm.password.value.trim();
+            const confirmPassword = signupForm.confirmPassword.value.trim();
+
+            if (email === '' || password === '' || confirmPassword === '') {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                return;
+            }
+
+            // Perform further signup processing here
+
+            alert('Signup successful!');
+        });
+    });
+</script>

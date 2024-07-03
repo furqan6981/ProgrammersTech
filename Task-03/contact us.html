@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Eduford - Contact Us</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <section class="sub-header" id="contact">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about us.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- about us content -->
+    <section class="contact-us">
+            <div class="contact-col">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.9287694723384!2d74.36131531448153!3d31.47114555672141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190167fa097f73%3A0xe09409254da797c7!2sSquare63!5e0!3m2!1sen!2s!4v1664969081179!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+
+    <!-- contact-form -->
+    <section class="form">
+        <div class="sec-1">
+            <div class="sec-1-1">
+                <i class="fas fa-home"></i>
+                <div class="address same">
+                    <h4>34-XX DHA Phase III, <br> Sector XX DHA Phase 3</h4>
+                    <p>Lahore, Punjab 54700</p>
+                </div>
+            </div>
+            <div class="sec-1-1">
+            <i class="fas fa-phone-alt"></i>
+                <div class="phone same">
+                    <h4>+92 301 9591060</h4>
+                    <p>Monday to Saturday 9Am to 5Pm</p>
+                </div>
+            </div>
+            <div class="sec-1-1">
+            <i class="fas fa-envelope"></i>
+                <div class="phone same">
+                    <h4>info@eduford.com</h4>
+                    <p>Email us your query</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="sec-2">
+            <div class="contact-form">
+                <input type="text" placeholder="Enter your Name">
+                <input type="email" name="" id="" placeholder="Enter Email Address">
+                <input type="text" placeholder="Enter your Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <a href="" class="hero-btn red-btn">Send Message</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Maxime modi quisquam tenetur error dicta nulla odit accusamus <br>
+            maiores quis quaerat voluptatibus,ratione necessitatibus a
+            itaque culpa ut sunt illum architecto.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-snapchat"></i>
+        </div>
+        <!-- <p>Made by <strong>furqantechsolutions.com</strong></p> -->
+    </section>
+
+</body>
+
+</html>
+
+<script>
+    let navLinks = document.getElementById('navLinks');
+
+    function showMenu() {
+        navLinks.style.display = 'block';
+
+    }
+    function hideMenu() {
+        navLinks.style.display = '';
+    }
+</script>
