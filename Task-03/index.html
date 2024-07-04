@@ -1,234 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Eduford - Home</title>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <!-- header -->
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="img/logo.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about us.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSES</a></li>
-                    <li><a href="contact us.html">CONTACT</a></li>
-                    <li><a href="login.html">LOGIN</a></li>
-                    <li><a href="signup.html">SIGN UP</a></li>
-
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-
-        <div class="text-box">
-            <h1>World's Biggest E-Learning Website</h1>
-            <p class="p">Making Website is now one of the easiest thing in the world.
-                You just need to learn HTML,CSS <br> and JavaScript and you are
-                good to go.
-            </p>
-            <a href="" class="hero-btn">Visit Us to know More</a>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div class="scoreboard">
+            <div class="player"><b>Player X:</b> <span id="scoreX">0</span></div>
+            <div class="player"><b>Player O:</b> <span id="scoreO">0</span></div>
         </div>
-    </section>
-
-    <!-- Course Section -->
-    <div class="course_cont">
-        <h1>Our Courses</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="game-board" id="gameBoard">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button id="resetBtn">End Game</button>
     </div>
-    <div class="courses-container">
-        <!-- Row 1 -->
-        <div class="course-card">
-            <img src="img/html.png" alt="Course Thumbnail">
-            <h3>HTML - Full Crash Course</h3>
-            <p><strong>Instructor:</strong> Instructor Name</p>
-            <p>Description of the course goes here.</p>
-            <p><strong>Price:</strong> $99</p>
-            <p><strong>Discounted Price:</strong> $79</p>
-        </div>
-        <div class="course-card">
-            <img src="img/css.png" alt="Course Thumbnail">
-            <h3>CSS</h3>
-            <p><strong>Instructor:</strong> Instructor Name</p>
-            <p>Description of the course goes here.</p>
-            <p><strong>Price:</strong> $129</p>
-            <p><strong>Discounted Price:</strong> $109</p>
-        </div>
-        <div class="course-card">
-            <img src="img/js.png" alt="Course Thumbnail">
-            <h3>JavaScript - Full Crash Course</h3>
-            <p><strong>Instructor:</strong> Instructor Name</p>
-            <p>Description of the course goes here.</p>
-            <p><strong>Price:</strong> $149</p>
-            <p><strong>Discounted Price:</strong> $129</p>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="course-card">
-            <img src="img/react.png" alt="Course Thumbnail">
-            <h3>React JS - Full Crash Course</h3>
-            <p><strong>Instructor:</strong> Instructor Name</p>
-            <p>Description of the course goes here.</p>
-            <p><strong>Price:</strong> $179</p>
-            <p><strong>Discounted Price:</strong> $149</p>
-        </div>
-        <div class="course-card">
-            <img src="img/node.png" alt="Course Thumbnail">
-            <h3>Node JS - Full Crash Course</h3>
-            <p><strong>Instructor:</strong> Instructor Name</p>
-            <p>Description of the course goes here.</p>
-            <p><strong>Price:</strong> $199</p>
-            <p><strong>Discounted Price:</strong> $169</p>
-        </div>
-        <div class="course-card">
-            <img src="img/mongo.png" alt="Course Thumbnail">
-            <h3>MongoDB - Full Crash Course</h3>
-            <p><strong>Instructor:</strong> Instructor Name</p>
-            <p>Description of the course goes here.</p>
-            <p><strong>Price:</strong> $219</p>
-            <p><strong>Discounted Price:</strong> $189</p>
-        </div>
-    </div>
-
-
-    <!-- facilities -->
-    <section class="facilities">
-        <h1>Our Facilities</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-        <div class="row">
-            <div class="facilities-col">
-                <img src="img/library.png">
-                <h3>Course Management</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam voluptatem, consequatur
-                    voluptas qui nostrum?</p>
-            </div>
-            <div class="facilities-col">
-                <img src="img/user-management-features.webp">
-                <h3>User Management</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam voluptatem, consequatur
-                    voluptas qui nostrum?</p>
-            </div>
-            <div class="facilities-col">
-                <img src="img/cafeteria.png">
-                <h3>Communication Tools</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam voluptatem, consequatur
-                    voluptas qui nostrum?</p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- testimonials -->
-    <section class="testimonials">
-        <h1>What Our Students Says</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-        <div class="row">
-            <div class="testimonials-col">
-                <img src="img/user1.jpg">
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Esse reiciendis vero et deleniti possimus.
-                        Numquam perferendis nemo earum architecto. Nisi!
-                        Esse reiciendis</p>
-                    <h3>Christropher Henry Gayle</h3>
-                    <i class="fa fa-star pad"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-solid fa-star-half"></i>
-                </div>
-            </div>
-            <div class="testimonials-col">
-                <img src="img/user2.jpg">
-                <div>
-                    <p class="p"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Esse reiciendis!
-                        Esse reiciendis vero et deleniti possimus.
-                        Numquam perferendis nemo earum architecto. Nisi</p>
-                    <h3>Sunil Phillip Narine</h3>
-                    <i class="fa fa-star pad"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-regular fa-star"></i>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FAQs -->
-    <section class="container">
-        <h1>Frequently Asked Questions</h1>
-        <div class="faq">
-            <div class="question">Q1: What is an e-learning management system (LMS)?</div>
-            <div class="answer">A1: An e-learning management system (LMS) is a software application designed to deliver, manage, and track online courses and training programs. It provides a platform for educators to create content and for learners to access educational resources.</div>
-        </div>
-        <div class="faq">
-            <div class="question">Q2: How do I enroll in a course?</div>
-            <div class="answer">A2: To enroll in a course, you need to create an account on our platform. Once registered, you can browse our course catalog and select the course you want to enroll in. Click on the "Enroll Now" button and follow the instructions to complete your enrollment.</div>
-        </div>
-        <div class="faq">
-            <div class="question">Q3: What types of courses are available?</div>
-            <div class="answer">A3: Our platform offers a wide range of courses across various disciplines, including technology, business, health, arts, and more. Each course is designed and delivered by industry experts and experienced educators.</div>
-        </div>
-        <div class="faq">
-            <div class="question">Q4: Can I access the courses on my mobile device?</div>
-            <div class="answer">A4: Yes, our platform is mobile-friendly. You can access all courses and learning materials on your smartphone or tablet, allowing you to learn on the go, anytime and anywhere.</div>
-        </div>
-    </section>
-      
-
-    <!-- call to action -->
-    <section class="cta">
-        <h1>Enroll for Our Various Online Courses <br> Anywhere From the World</h1>
-        <a href="contact us.html" class="hero-btn">CONTACT US</a>
-    </section>
-
-    <!-- footer -->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Maxime modi quisquam tenetur error dicta nulla odit accusamus <br>
-            maiores quis quaerat voluptatibus,ratione necessitatibus a
-            itaque culpa ut sunt illum architecto.</p>
-        <div class="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-snapchat"></i>
-        </div>
-        <!-- <p>Made by <strong>furqantechsolutions.com</strong></p> -->
-    </section>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-<script>
-    let navLinks = document.getElementById('navLinks');
-
-    function showMenu() {
-        navLinks.style.display = 'block';
-
-    }
-    function hideMenu() {
-        navLinks.style.display = '';
-    }
-</script>
