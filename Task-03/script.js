@@ -1,4 +1,3 @@
-// script.js
 const gameBoard = document.getElementById('gameBoard');
 const cells = document.querySelectorAll('.cell');
 const scoreX = document.getElementById('scoreX');
